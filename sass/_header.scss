@@ -1,0 +1,20 @@
+@mixin center($direction, $background) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  background: $background;
+}
+
+header {
+  @include center(column, aqua);
+
+  //   background-color: aqua;
+
+  p {
+    color: $firstP_Color;
+    &:hover {
+      background: white;
+    }
+  }
+}

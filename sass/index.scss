@@ -1,0 +1,15 @@
+@import './variables';
+@import './header';
+
+main {
+  @include center(row, yellow);
+  p {
+    color: $secondP_color;
+  }
+}
+
+.inherit {
+  @extend header;
+  background: greenyellow;
+  width: 100% - 20%;
+}
